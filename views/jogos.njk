@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Jogos</title>
+    {% endblock head %}
+    {% block content %}
+        <div id="wrapper">
+            <h1>Jogos</h1>
+        </div>
+        <section class="cards">
+            {% for game in games %}
+                <div class="card" id="{{ game.id }}">
+                    <div class="card-image-container {{ 'featured-wrapper' if game.featured }}">
+                        <img src="{{ game.img }}" alt="{{ game.title }}">
+                            {% if game.featured %}
+                                <div class="featured">
+                                    <i class="material-icons">star</i>
+                                </div>
+                            {% endif %}
+                            <div class="card-content">
+                                <p>{{ game.title }}</p>
+                            </div>
+                            <div class="card-info">
+                                <p>{{ game.gender }}</p>
+                                <p class="card-price">{{ game.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </section>
+            <script src="/scripts/scripts.js"></script>
+        {% endblock content %}
