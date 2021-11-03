@@ -8,7 +8,7 @@
   
 
 ---------
----------
+
 
 ## 🖥️ Demonstração
 
@@ -21,7 +21,7 @@
 </h1>
 
 ----------
-----------
+
 
 
 ## 🚀 Tecnologias e ferramentas utilizadas
@@ -34,7 +34,7 @@
 - **Templating engine (Nunjucks)**
 
 ----
-----
+
 
 ## 💻 Instalação e uso
 
@@ -56,6 +56,6 @@ $ npm start
 ```
 
 ----
-----
+
 
 **Desenvolvido por [Rodrigo Fonseca](https://github.com/RodrigoFonsecaG/).**
